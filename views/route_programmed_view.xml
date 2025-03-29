@@ -4,7 +4,7 @@
     <record id="action_route_programmed" model="ir.actions.act_window">
         <field name="name">Rutas Programadas</field>
         <field name="res_model">sai.route.programmed</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
         <field name="type">ir.actions.act_window</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
@@ -24,15 +24,15 @@
               sequence="20"
               action="action_route_programmed"/>
 
-    <!-- Vista tipo tree -->
-    <record id="view_route_programmed_tree" model="ir.ui.view">
-        <field name="name">sai.route.programmed.tree</field>
+    <!-- ✅ Vista tipo list (antes "tree") -->
+    <record id="view_route_programmed_list" model="ir.ui.view">
+        <field name="name">sai.route.programmed.list</field>
         <field name="model">sai.route.programmed</field>
         <field name="arch" type="xml">
-            <tree string="Rutas Programadas">
+            <list string="Rutas Programadas">
                 <field name="name"/>
                 <field name="active"/>
-            </tree>
+            </list>
         </field>
     </record>
 
