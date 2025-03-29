@@ -1,1 +1,14 @@
-<field name="route_programmed_id" options="{'no_create': False}" placeholder="Selecciona una ruta logística"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_sale_order_form_inherit_route" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit.route</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <!-- Aquí insertas el campo -->
+            <field name="payment_term_id" position="after">
+                <field name="route_programmed_id" options="{'no_create': False}"/>
+            </field>
+        </field>
+    </record>
+</odoo>
