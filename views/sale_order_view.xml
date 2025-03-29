@@ -5,7 +5,6 @@
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
-            <!-- Aquí insertas el campo -->
             <field name="payment_term_id" position="after">
                 <field name="route_programmed_id" options="{'no_create': False}"/>
             </field>
