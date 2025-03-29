@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+    <record id="route_norte" model="sai.route.programmed">
+        <field name="name">Ruta Norte</field>
+        <field name="description">Recolección semanal programada para clientes ubicados en la zona norte de la ciudad.</field>
+    </record>
+
+    <record id="route_industrial" model="sai.route.programmed">
+        <field name="name">Ruta Industrial</field>
+        <field name="description">Recolección especial en parques industriales y fábricas, incluye residuos peligrosos.</field>
+    </record>
+
+    <record id="route_express" model="sai.route.programmed">
+        <field name="name">Ruta Express</field>
+        <field name="description">Recolección rápida y bajo demanda, utilizada en situaciones especiales o urgentes.</field>
+    </record>
+
+    <record id="route_centro" model="sai.route.programmed">
+        <field name="name">Ruta Centro</field>
+        <field name="description">Cubre la recolección de residuos en el área del centro histórico y zonas comerciales.</field>
+    </record>
+
+    <record id="route_hospitalaria" model="sai.route.programmed">
+        <field name="name">Ruta Hospitalaria</field>
+        <field name="description">Recolección especializada de residuos biológico-infecciosos provenientes de hospitales y clínicas.</field>
+    </record>
+
+    <record id="route_sur" model="sai.route.programmed">
+        <field name="name">Ruta Sur</field>
+        <field name="description">Servicio regular semanal enfocado en clientes ubicados en la zona sur de la ciudad.</field>
+    </record>
+
+    <record id="route_poniente" model="sai.route.programmed">
+        <field name="name">Ruta Poniente</field>
+        <field name="description">Atiende residencias y pequeños comercios en el lado poniente de la ciudad.</field>
+    </record>
+
+    <record id="route_oriente" model="sai.route.programmed">
+        <field name="name">Ruta Oriente</field>
+        <field name="description">Recolección semanal en establecimientos comerciales e industriales en el área este.</field>
+    </record>
+
+    <record id="route_urbana_mixta" model="sai.route.programmed">
+        <field name="name">Ruta Urbana Mixta</field>
+        <field name="description">Servicio flexible que atiende zonas residenciales y comerciales en áreas urbanas generales.</field>
+    </record>
+
+    <record id="route_aeropuerto" model="sai.route.programmed">
+        <field name="name">Ruta Aeropuerto</field>
+        <field name="description">Atiende específicamente instalaciones en el área del aeropuerto y empresas aledañas.</field>
+    </record>
+
+    <record id="route_periferica" model="sai.route.programmed">
+        <field name="name">Ruta Periférica</field>
+        <field name="description">Recolección alrededor de toda la ciudad en sectores cercanos a carreteras periféricas.</field>
+    </record>
+
+    <record id="route_escolar" model="sai.route.programmed">
+        <field name="name">Ruta Escolar</field>
+        <field name="description">Servicio de recolección en escuelas, universidades y centros educativos.</field>
+    </record>
+
+    <record id="route_hoteleria" model="sai.route.programmed">
+        <field name="name">Ruta Hotelería</field>
+        <field name="description">Servicio exclusivo para hoteles, restaurantes y centros turísticos de la ciudad.</field>
+    </record>
+
+    <record id="route_comercial" model="sai.route.programmed">
+        <field name="name">Ruta Comercial</field>
+        <field name="description">Atiende zonas de alto flujo comercial, como centros comerciales y tiendas grandes.</field>
+    </record>
+
+    <record id="route_domestica_especial" model="sai.route.programmed">
+        <field name="name">Ruta Doméstica Especial</field>
+        <field name="description">Servicio puerta a puerta programado mensualmente para sectores residenciales específicos.</field>
+    </record>
+
+    <record id="route_maritima" model="sai.route.programmed">
+        <field name="name">Ruta Marítima</field>
+        <field name="description">Servicio de recolección en puertos, muelles y áreas relacionadas con actividades marítimas.</field>
+    </record>
+
+    <record id="route_eventos" model="sai.route.programmed">
+        <field name="name">Ruta Eventos</field>
+        <field name="description">Atiende sitios de eventos masivos, ferias, conciertos y festivales según calendario.</field>
+    </record>
+
+    <record id="route_reciclaje_selectivo" model="sai.route.programmed">
+        <field name="name">Ruta Reciclaje Selectivo</field>
+        <field name="description">Servicio especial para empresas comprometidas con programas específicos de reciclaje.</field>
+    </record>
+
+</odoo>
