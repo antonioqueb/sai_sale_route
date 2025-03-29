@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+    <!-- Acción -->
+    <record id="action_route_programmed" model="ir.actions.act_window">
+        <field name="name">Rutas Programadas</field>
+        <field name="res_model">sai.route.programmed</field>
+        <field name="view_mode">tree,form</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crea rutas logísticas para órdenes de recolección.
+            </p>
+        </field>
+    </record>
+
     <!-- Menús -->
     <menuitem id="menu_route_programmed_root"
               name="Rutas de Recolección"
@@ -8,20 +21,8 @@
     <menuitem id="menu_route_programmed"
               name="Rutas Programadas"
               parent="menu_route_programmed_root"
-              action="action_route_programmed"
-              sequence="20"/>
-
-    <!-- Acción -->
-    <record id="action_route_programmed" model="ir.actions.act_window">
-        <field name="name">Rutas Programadas</field>
-        <field name="res_model">sai.route.programmed</field>
-        <field name="view_mode">tree,form</field>
-        <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">
-                Crea rutas logísticas para órdenes de recolección.
-            </p>
-        </field>
-    </record>
+              sequence="20"
+              action="action_route_programmed"/>
 
     <!-- Vista tipo tree -->
     <record id="view_route_programmed_tree" model="ir.ui.view">
