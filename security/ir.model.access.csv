@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sai_route_programmed_user,access_sai_route_programmed_user,model_sai_route_programmed,base.group_user,1,1,1,1
