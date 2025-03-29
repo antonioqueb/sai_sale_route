@@ -1,0 +1,40 @@
+<odoo>
+    <!-- Primero: Menús -->
+    <menuitem id="menu_route_programmed_root" name="Rutas de Recolección" sequence="10"/>
+    <menuitem id="menu_route_programmed" name="Rutas Programadas" parent="menu_route_programmed_root" sequence="10"/>
+
+    <!-- Segundo: Acción -->
+    <act_window id="action_route_programmed"
+                name="Rutas Programadas"
+                res_model="sai.route.programmed"
+                view_mode="tree,form"
+                menu_id="menu_route_programmed"/>
+
+    <!-- Tercero: Vistas -->
+    <record id="view_route_programmed_tree" model="ir.ui.view">
+        <field name="name">sai.route.programmed.tree</field>
+        <field name="model">sai.route.programmed</field>
+        <field name="arch" type="xml">
+            <tree string="Rutas Programadas">
+                <field name="name"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_route_programmed_form" model="ir.ui.view">
+        <field name="name">sai.route.programmed.form</field>
+        <field name="model">sai.route.programmed</field>
+        <field name="arch" type="xml">
+            <form string="Ruta Programada">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="active"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
